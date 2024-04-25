@@ -45,7 +45,7 @@ img {
 body {
   font-family: Arial, sans-serif; /* Встановлення стандартного шрифту */
   line-height: 1.5; /* Встановлення висоти лінії */
-  background: #fff; /* Білий колір фону */
+  background: #ede9e9; /* Білий колір фону */
   color: #333; /* Темно-сірий колір тексту */
 }
 
@@ -78,6 +78,7 @@ span {
   gap: 8px;
 }
 .header-nav {
+  align-items: center;
   display: flex;
   gap: 8px;
 }
@@ -90,17 +91,34 @@ span {
   height: 40px;
 }
 .hero {
-  position: relative;
 }
 .hero-img {
+  width: 100%;
 }
 .hero-video {
-  max-width: 100%;
+  width: 100%;
 }
 .hero-descr {
-  position: absolute;
-  top: 30%;
-  left: 20%;
+  border-radius: 24px;
+  text-align: left;
+  padding: 12px 15px;
+  background-color: #ccc9c964;
+}
+.hero-descr h1 {
+  text-align: center;
+}
+
+.footer-video {
+  width: 100%;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px 24px 0 0;
+  background-color: #333;
+  padding-bottom: 28px;
 }
 .footer {
 }
@@ -116,7 +134,9 @@ span {
 }
 .footer-nav-tik-tok {
 }
-
+.footer-descr {
+  color: orange;
+}
 .container {
   width: 100%; /* Встановлюємо ширину контейнера за замовчуванням на 100% */
   max-width: 780px; /* Максимальна ширина контейнера за замовчуванням */
@@ -136,5 +156,11 @@ span {
 @media (max-width: 480px) {
   .container {
     padding: 10px; /* Зменшуємо відступи всередині контейнера */
+  }
+  .span-nav {
+    display: none;
+  }
+  .nav {
+    height: 80px;
   }
 }
