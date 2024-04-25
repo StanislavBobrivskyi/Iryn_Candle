@@ -90,10 +90,17 @@ span {
   height: 40px;
 }
 .hero {
+  position: relative;
 }
 .hero-img {
 }
+.hero-video {
+  max-width: 100%;
+}
 .hero-descr {
+  position: absolute;
+  top: 30%;
+  left: 20%;
 }
 .footer {
 }
