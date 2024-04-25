@@ -1,0 +1,133 @@
+/* Універсальний селектор для встановлення основних параметрів для всіх елементів */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box; /* Дозволяє включати padding і border в загальну ширину та висоту елементів */
+  vertical-align: baseline;
+}
+
+/* Параметри для групи елементів, які мають спільні особливості */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* Скидання списків, щоб видалити відступи та стилі списків */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Стилі для тегів 'a', щоб видалити підкреслення і задати стандартний колір тексту */
+a {
+  text-decoration: none;
+  color: inherit; /* Спадковість кольору від батьківського елемента */
+}
+
+/* Стилі для зображень, щоб вони не виходили за межі своїх контейнерів */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Застосування базового шрифту для всіх текстових елементів */
+body {
+  font-family: Arial, sans-serif; /* Встановлення стандартного шрифту */
+  line-height: 1.5; /* Встановлення висоти лінії */
+  background: #fff; /* Білий колір фону */
+  color: #333; /* Темно-сірий колір тексту */
+}
+
+span {
+  color: orange;
+}
+
+.header {
+}
+.container {
+}
+.nav {
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  overflow: hidden;
+}
+.roots-wrapper {
+  width: 160px;
+  height: 160px;
+}
+
+.logo-list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.header-nav {
+  display: flex;
+  gap: 8px;
+}
+.nsv-instagram {
+  width: 40px;
+  height: 40px;
+}
+.nav-tik-tok {
+  width: 40px;
+  height: 40px;
+}
+.hero {
+}
+.hero-img {
+}
+.hero-descr {
+}
+.footer {
+}
+.footer-logo {
+}
+.footer-dscr {
+}
+.footer-nav {
+}
+.footer-nav-list {
+}
+.footer-nav-insta {
+}
+.footer-nav-tik-tok {
+}
+
+.container {
+  width: 100%; /* Встановлюємо ширину контейнера за замовчуванням на 100% */
+  max-width: 780px; /* Максимальна ширина контейнера за замовчуванням */
+  margin: 0 auto; /* Вирівнюємо контейнер по центру на сторінці */
+  padding: 20px; /* Встановлюємо відступи всередині контейнера */
+  box-sizing: border-box; /* Включаємо відступи і рамки в загальну ширину */
+}
+
+/* Медіаправило для екранів менше або дорівнює 780 пікселям */
+@media (max-width: 780px) {
+  .container {
+    max-width: 100%; /* Дозволяємо контейнеру займати 100% ширини екрану */
+  }
+}
+
+/* Медіаправило для екранів менше або дорівнює 480 пікселям */
+@media (max-width: 480px) {
+  .container {
+    padding: 10px; /* Зменшуємо відступи всередині контейнера */
+  }
+}
