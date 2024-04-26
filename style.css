@@ -43,16 +43,26 @@ img {
 
 /* Застосування базового шрифту для всіх текстових елементів */
 body {
-  font-family: Arial, sans-serif; /* Встановлення стандартного шрифту */
+  font-family: "Roboto", sans-serif; /* Встановлення стандартного шрифту */
   line-height: 1.5; /* Встановлення висоти лінії */
   background: #ede9e9; /* Білий колір фону */
   color: #333; /* Темно-сірий колір тексту */
 }
 
 span {
+  font-weight: 700;
   color: orange;
 }
-
+h1 {
+  font-weight: 700;
+  letter-spacing: normal;
+  line-height: normal;
+  margin-bottom: 48px;
+}
+p {
+  font-weight: 400;
+  margin-bottom: 12px;
+}
 .header {
 }
 .container {
@@ -162,5 +172,11 @@ span {
   }
   .nav {
     height: 80px;
+  }
+  h1 {
+    margin-bottom: 22px !important;
+  }
+  p {
+    margin-bottom: 8px;
   }
 }
