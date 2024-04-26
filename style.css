@@ -37,7 +37,7 @@ a {
 
 /* Стилі для зображень, щоб вони не виходили за межі своїх контейнерів */
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -52,13 +52,17 @@ body {
 span {
   font-weight: 700;
   color: orange;
+  text-shadow: 4px 4px 8px rgba(141, 90, 15, 0.5);
 }
 h1 {
+  color: #163015;
   font-weight: 700;
   letter-spacing: normal;
   line-height: normal;
   margin-bottom: 48px;
+  text-shadow: 4px 4px 8px rgba(43, 72, 51, 0.5);
 }
+
 p {
   font-weight: 400;
   margin-bottom: 12px;
